@@ -34,7 +34,7 @@ const chatRoutes = require("./routes/chatRoutes");
 const notificationsRoutes = require("./routes/notificationRoutes.js")
 const storiesRoutes = require("./routes/storyRoutes.js")
 const ReelRoutes = require("./routes/reelRoutes.js")
-const messageRoutes = require("./routes/messageRoutes.js")
+// const messageRoutes = require("./routes/messageRoutes.js")
 const orderRouter = require("./routes/orderRoutes.js")
 const productRouter= require("./routes/productRoutes.js")
 const cartRoutes= require("./routes/cartRoutes.js")
@@ -71,13 +71,13 @@ app.use(cookieParser(process.env.JWT_SECRET));
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/post", postRoutes);
-app.use("/api/v1/chat", chatRoutes);
-app.use("/api/v1/notifications", notificationsRoutes);
+// app.use("/api/v1/chat", chatRoutes);
+// app.use("/api/v1/notifications", notificationsRoutes);
 app.use("/api/v1/stories", storiesRoutes);
 app.use("/api/v1/reel", ReelRoutes);
-app.use("/api/v1/messages", messageRoutes);
-app.use('/api/v1/products', productRouter);
-app.use('/api/v1/orders', orderRouter);
+// app.use("/api/v1/messages", messageRoutes);
+// app.use('/api/v1/products', productRouter);
+// app.use('/api/v1/orders', orderRouter);
 app.use("/api/v1/review", reviewRoutes);
 app.use("/api/v1/cart",cartRoutes )
 
